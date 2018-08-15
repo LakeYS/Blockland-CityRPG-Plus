@@ -1,2 +1,3 @@
 Title: CityRPG Plus
 Author: LakeYS
+An expansion mod for the CityRPG game-mode. Compatible with most standard variants of CityRPG.
