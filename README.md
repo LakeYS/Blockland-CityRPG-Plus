@@ -1,19 +1,19 @@
 # Blockland-CityRPG-Plus
-CityRPG Plus is an expansion mod for the CityRPG game-mode.
+CityRPG Plus is a standalone expansion for the CityRPG game-mode. This project is currently in an early planning/development phase.
 
-CityRPG Plus is built around Ty's CityRPG in conjunction with CityRPG X. See below to find out which version of CityRPG it has been tested with.
+CityRPG Plus is designed to be compatible with any standard variant of CityRPG. It is built around Ty's CityRPG in conjunction with CityRPG X. See below to find out exactly which versions of CityRPG it has been tested with.
 
 # Testing
 This add-on has been tested with the following variants of CityRPG:
 
-File Name               | CRC          | Latest v. Tested | Commit Tested | Other Notes
------------------------ | ------------ | ---------------- | ------------- | ---------------------- |
-Gamemode_CityRPG.zip    | 1504460900   | N/A              | N/A           |
-Gamemode_TysCityRPG.zip | 467599692    | N/A              | N/A           | **Beware, Ty's mod contains known exploits.**
+File Name               | Compatibility | CRC              | Latest v. Tested | Commit Tested | Other Notes
+----------------------- | ------------- | ---------------- | ---------------- | ------------- | ----------------------- |
+Gamemode_CityRPG.zip    |               | 1504460900       | N/A              | N/A           |
+Gamemode_TysCityRPG.zip |               | 467599692        | N/A              | N/A           | **Beware, Ty's mod contains known exploits. Make sure you're using the fixed version (check description.txt to verify)**
 
 # Support
 For bugs, feature requests, and feedback, message Lake#4898 on Discord or e-mail contact@lakeys.net.
 
 # Testing Criteria
-This is the criteria required for the add-on to be considered functional with a given version of CityRPG:
+This is the criteria required for the add-on to be considered fully compatible with a given version of CityRPG:
 - Work in progress.
