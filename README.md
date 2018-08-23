@@ -10,6 +10,7 @@ File Name               | Compatibility | CRC              | Latest v. Tested | 
 ----------------------- | ------------- | ---------------- | ---------------- | ------------- | ----------------------- |
 Gamemode_CityRPG.zip    |               | 1504460900       | N/A              | N/A           |
 Gamemode_TysCityRPG.zip |               | 467599692        | N/A              | N/A           | **Beware, Ty's mod contains known exploits. Make sure you're using the fixed version (check description.txt to verify)**
+Gamemode_CityRPG_X.zip  |               |                  | N/A              | N/A           |                         |
 
 # Support
 For bugs, feature requests, and feedback, message Lake#4898 on Discord or e-mail contact@lakeys.net.
