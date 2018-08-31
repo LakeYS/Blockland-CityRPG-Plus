@@ -34,6 +34,30 @@ if(!isObject(CityRPGData)) {
 // # Package # //
 package CityRPGPlus
 {
+  // ## Security ## //
+	// This overwrites commands for known exploits.
+	// Most common versions of CityRPG have these patched out. This is simply an extra precaution.
+  function serverCmdLootDrugs(%client) {
+    if(isFunction(GameConnection, CRPGLog))
+      %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /lootDrugs");
+  }
+
+  function serverCmdeSet(%client) {
+    if(isFunction(GameConnection, CRPGLog))
+      %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /eSet");
+  }
+
+  function serverCmdrt(%client) {
+    if(isFunction(GameConnection, CRPGLog))
+      %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /rt");
+  }
+
+  function serverCmdfit(%client) {
+    if(isFunction(GameConnection, CRPGLog))
+      %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /fit");
+  }
+
+
 };
 deactivatePackage(CityRPGPlus);
 activatePackage(CityRPGPlus);
