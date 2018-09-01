@@ -67,6 +67,9 @@ package CityRPGPlus
   // ## Security ## //
 	// This overwrites commands for known exploits.
 	// Most common versions of CityRPG have these patched out. This is simply an extra precaution.
+
+	// The following were found in the original version of /Ty's CityRPG.
+	// See here: https://forum.blockland.us/index.php?topic=320447
   function serverCmdLootDrugs(%client) {
     if(isFunction(GameConnection, CRPGLog))
       %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /lootDrugs");
@@ -87,7 +90,30 @@ package CityRPGPlus
       %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /fit");
   }
 
+	// The following was found in Iban's CityRPG, as well as several edited versions.
+	// This one is overwritten by the game iteslf in newer versions of BL, but it's
+	// still better to be extra safe.
+	function serverCmdtogadmin(%client) {
+    if(isFunction(GameConnection, CRPGLog))
+      %client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /togadmin");
+  }
 
+	// The following were allegedly found in earlier versions of JJStorm's CityRPG.
+	// See here: https://forum.blockland.us/index.php?topic=140939.0
+	function serverCmdclaimadmin(%client) {
+		if(isFunction(GameConnection, CRPGLog))
+			%client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /claimAdmin");
+	}
+
+	function serverCmdfakeadmin(%client) {
+		if(isFunction(GameConnection, CRPGLog))
+			%client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /fakeAdmin");
+	}
+
+	function serverCmdkickall(%client) {
+		if(isFunction(GameConnection, CRPGLog))
+			%client.CRPGLog("!!!EXPLOIT ATTEMPT!!! /kickall");
+	}
 };
 deactivatePackage(CityRPGPlus);
 activatePackage(CityRPGPlus);
