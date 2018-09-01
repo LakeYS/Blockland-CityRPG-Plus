@@ -1,9 +1,9 @@
-registerPreferenceAddon("Server_CityRPGPlus", "CityRPG Plus", "building_add");
+registerPreferenceAddon("Support_CityRPG_Plus", "CityRPG Plus", "building_add");
 
 new ScriptObject(Preference) {
   className      = "CityRPGPlus";
 
-  addon          = "Server_CityRPGPlus";
+  addon          = "Support_CityRPG_Plus";
   category       = "General";
   title          = "Hunger affects scale";
 

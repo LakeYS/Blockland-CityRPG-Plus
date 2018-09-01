@@ -24,7 +24,7 @@ if(!isObject(CityRPGData)) {
   // Reset init to 0 in case a custom branch re-runs the add-on.
   $CityRPGPlus::Init = 0;
 
-  error("Server_CityRPGPlus - Unable to load a compatible version of CityRPG. This add-on requires CityRPG in order to run."
+  error("Support_CityRPG_Plus - Unable to load a compatible version of CityRPG. This add-on requires CityRPG in order to run."
 	NL "If you are writing a custom CityRPG branch, have your mod detect and execute CityRPG Plus (forceRequiredAddOn won't work) after the game-mode initializes. Avoid renaming the CityRPGData object.");
 	return;
 }
@@ -95,7 +95,7 @@ activatePackage(CityRPGPlus);
 // # Debug Functions # //
 function CityRPGPlus_Reload() {
 	$CityRPGPlus::ForceReload = 1;
-	exec("Add-Ons/Server_CityRPGPlus/server.cs");
+	exec("Add-Ons/Support_CityRPG_Plus/server.cs");
 }
 
 echo("############ CityRPG & CityRPG Plus initialized! ############");
