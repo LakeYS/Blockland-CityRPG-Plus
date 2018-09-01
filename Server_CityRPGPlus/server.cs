@@ -8,8 +8,6 @@ if($CityRPGPlus::Init && !$CityRPGPlus::ForceReload)
 }
 $CityRPGPlus::Init = 1;
 
-exec("./prefs.cs");
-
 // If CityRPG is not alreay enabled, try to enable the first one we can find.
 // May execute the wrong one if there are multiple copies installed.
 if(!isObject(CityRPGData))
@@ -31,9 +29,41 @@ if(!isObject(CityRPGData)) {
 	return;
 }
 
+exec("./prefs.cs");
+
 // # Package # //
 package CityRPGPlus
 {
+  // ## Hunger Scaling ## //
+  // This disables the hunger scaling effect.
+  function player::setScale(%this, %scale)
+  {
+		// If enabled, we'll want to re-implement it for Ty's and CityRPG X.
+		// This part does nothing if the original CityRPG is running.
+		if($Pref::CityRPGPlus::HungerScaling) {
+			if(isObject(%this.client))
+			{
+				if(CityRPGData.getData(%this.client.bl_id).valueHunger > 6)
+					%scale = "1.125 1.125 1";
+				else if(CityRPGData.getData(%this.client.bl_id).valueHunger == 1)
+					%scale = "0.75 0.75 1";
+				else
+					%scale = "1 1 1";
+				}
+		}
+
+    %valueHunger = CityRPGData.getData(%this.client.bl_id).valueHunger;
+
+		// If disabled, we'll need to override it for the original CityRPG and other branches.
+		// This part does nothing if Ty's CityRPG or CityRPG X is running.
+    if(!$Pref::CityRPGPlus::HungerScaling) {
+			// Temporarily set hunger to 4. This tricks the game-mode into setting our scale to the normal "1 1 1"
+      CityRPGData.getData(%this.client.bl_id).valueHunger = 4;
+    }
+    Parent::setScale(%this, %scale);
+    CityRPGData.getData(%this.client.bl_id).valueHunger = %valueHunger; // Reset the player's hunger to its original value.
+  }
+
   // ## Security ## //
 	// This overwrites commands for known exploits.
 	// Most common versions of CityRPG have these patched out. This is simply an extra precaution.
