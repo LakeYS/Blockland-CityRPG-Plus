@@ -1,3 +1,7 @@
+if(!isFunction(registerPreferenceAddon)) {
+  return;
+}
+
 registerPreferenceAddon("Support_CityRPG_Plus", "CityRPG Plus", "building_add");
 
 new ScriptObject(Preference) {
