@@ -3,6 +3,9 @@ CityRPG Plus is a standalone expansion for the CityRPG game-mode. This project i
 
 CityRPG Plus is designed to be compatible with any standard variant of CityRPG. It is built around Ty's CityRPG in conjunction with CityRPG X. See below to find out exactly which versions of CityRPG it has been tested with.
 
+# Support
+For bugs, feature requests, and feedback, [contact me on Discord](https://discord.gg/s3vCQba) or e-mail contact@lakeys.net.
+
 # Testing
 This add-on has been tested with the following variants of CityRPG:
 
@@ -16,9 +19,6 @@ Gamemode_CityRPG_X.zip  |               |                  | N/A              | 
 
 # Preferences
 - "Hunger affects scale" - Whether players will be resized to look thinner or fatter based on their hunger level. (*Default: Off*)
-
-# Support
-For bugs, feature requests, and feedback, message Lake#4898 on Discord or e-mail contact@lakeys.net.
 
 # Testing Criteria
 This is the criteria required for the add-on to be considered fully compatible with a given version of CityRPG:
