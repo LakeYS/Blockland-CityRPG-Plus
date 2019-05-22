@@ -29,7 +29,7 @@ $CityRPGPlus::Init = 1;
 if(!isObject(CityRPGData))
   forceRequiredAddOn("Gamemode_CityRPG");
 if(!isObject(CityRPGData))
-  forceRequiredAddOn("GameMode_CityRPG_X");
+  forceRequiredAddOn("GameMode_CityRPG4");
 if(!isObject(CityRPGData))
   forceRequiredAddOn("Gamemode_TysCityRPG");
 if(!isObject(CityRPGData))
