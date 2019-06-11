@@ -6,16 +6,9 @@
 //                                              //
 // Author: Lake Y (BLID: 14128)                 //
 // ============================================ //
-// Table of Contents:                           //
-// 1. Init                                      //
-// 2. Package                                   //
-//    2.1: Security                             //
-//    2.2: Hunger Scaling                       //
-// 3. Debug Functions                           //
-// ============================================ //
 
 // ================================== //
-// # 1: Init #
+// # Init #
 // ================================== //
 if($CityRPGPlus::Init && !$CityRPGPlus::ForceReload)
 {
@@ -48,12 +41,12 @@ if(!isObject(CityRPGData)) {
 exec("./prefs.cs");
 
 // ================================== //
-// # 2: Package  #
+// # Package #
 // ================================== //
 package CityRPGPlus
 {
 	// ================================== //
-	// ## 2.1: Security ##
+	// ## Security ##
 	// ================================== //
 
 	// This overwrites commands for known exploits.
@@ -107,7 +100,7 @@ package CityRPGPlus
 	}
 
 	// ================================== //
-	// ## 2.2: Hunger Scaling  ##
+	// ## Hunger Scaling  ##
 	// ================================== //
 
 	// This re-writes the hunger scaling effect as a preference.
@@ -143,7 +136,7 @@ deactivatePackage(CityRPGPlus);
 activatePackage(CityRPGPlus);
 
 // ================================== //
-// # 3: Debug Functions  #
+// # Debug Functions  #
 // ================================== //
 function CityRPGPlus_Reload() {
 	$CityRPGPlus::ForceReload = 1;
