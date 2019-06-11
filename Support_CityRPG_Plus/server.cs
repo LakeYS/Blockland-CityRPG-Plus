@@ -106,7 +106,7 @@ package CityRPGPlus
 	// This re-writes the hunger scaling effect as a preference.
 	function player::setScale(%this, %scale)
 	{
-		// If enabled, we'll want to re-implement it for Ty's and CityRPG X.
+		// If enabled, we'll want to re-implement it for Ty's and CityRPG 4.
 		// This part does nothing if the original CityRPG is running.
 		if($Pref::CityRPGPlus::HungerScaling) {
 			if(isObject(%this.client))
@@ -123,7 +123,7 @@ package CityRPGPlus
 		%valueHunger = CityRPGData.getData(%this.client.bl_id).valueHunger;
 
 		// If disabled, we'll need to override it for the original CityRPG and other branches.
-		// This part does nothing if Ty's CityRPG or CityRPG X is running.
+		// This part does nothing if Ty's CityRPG or CityRPG 4 is running.
 		if(!$Pref::CityRPGPlus::HungerScaling) {
 			// Temporarily set hunger to 4. This tricks the game-mode into setting our scale to the normal "1 1 1"
 			CityRPGData.getData(%this.client.bl_id).valueHunger = 4;
