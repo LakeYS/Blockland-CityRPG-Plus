@@ -6,15 +6,16 @@ CityRPG Plus is designed to be compatible with any standard variant of CityRPG. 
 # Support
 For bugs, feature requests, and feedback, [contact me on Discord](https://discord.gg/s3vCQba) or e-mail contact@lakeys.net.
 
-# Testing
+# Compatibility
 CityRPG Plus is designed to be comatible with most standard variants of CityRPG. It has been tested with the following variants:
 
-File Name               | Compatibility | CRC              | Latest v. Tested | Commit Tested | Other Notes
------------------------ | ------------- | ---------------- | ---------------- | ------------- | ----------------------- |
-Gamemode_CityRPG.zip    |               | 1504460900       | N/A              | N/A           |
-Gamemode_TysCityRPG.zip |               | 467599692        | N/A              | N/A           | **Beware, Ty's mod contains known exploits. Make sure you're using the fixed version (check description.txt to verify)**
-Gamemode_JJstormsCityRPG.zip  |               | -2145891094      | N/A              | N/A           |                         |
-Gamemode_CityRPG4.zip   |               |                  | N/A              | 5d9df45       |                         |
+File Name               | Compatibility | CRC              | Latest v. Tested | Other Notes
+----------------------- | ------------- | ---------------- | ---------------- |----------------------- |
+Gamemode_CityRPG.zip    | Full          | 1504460900       | N/A              |
+Gamemode_TysCityRPG.zip | Full          | 467599692        | N/A              | **Beware, Ty's mod contains known exploits. Make sure you're using the fixed version (check description.txt to verify)**
+Gamemode_JJstormsCityRPG.zip  | Unknown | -2145891094      | N/A              |                        |
+GameMode_CityRPG4.zip   | Full          |                  | N/A              |                        |
+Gamemode_MetropolisRP.zip | Unknown     |                  | N/A              |                        |
 
 # Preferences
 - "Hunger affects scale" - Whether players will be resized to look thinner or fatter based on their hunger level. (*Default: Off*)
