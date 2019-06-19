@@ -3,8 +3,6 @@
 // CityRPG Plus is a standalone expansion for   //
 // the CityRPG game-mode, compatible with most  //
 // standard variants of CityRPG.                //
-//                                              //
-// Author: Lake Y (BLID: 14128)                 //
 // ============================================ //
 
 // ================================== //
