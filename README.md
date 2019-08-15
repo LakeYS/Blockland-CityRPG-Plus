@@ -7,14 +7,16 @@ CityRPG Plus is designed to be compatible with any standard variant of CityRPG. 
 For bugs, feature requests, and feedback, [contact me on Discord](https://discord.gg/s3vCQba) or e-mail contact@lakeys.net.
 
 # Compatibility
-CityRPG Plus is designed to be comatible with most standard variants of CityRPG. It has been tested with the following variants:
+CityRPG Plus is designed to be compatible with most standard variants of CityRPG. The possible compatibility ratings are *Full*, *Partial*, *Broken*, *None*, and *Unknown*. We are aiming to have at least a Partial rating for every single CityRPG variant.
+
+CityRPG Plus has been tested in the following CityRPG variants:
 
 File Name               | Compatibility | CRC              | Latest v. Tested | Other Notes
 ----------------------- | ------------- | ---------------- | ---------------- |----------------------- |
+GameMode_CityRPG4.zip   | Full          |                  | N/A              |                        |
 Gamemode_CityRPG.zip    | Full          | 1504460900       | N/A              |
 Gamemode_TysCityRPG.zip | Full          | 467599692        | N/A              | **Beware, Ty's mod contains known exploits. Make sure you're using the fixed version (check description.txt to verify)**
 Gamemode_JJstormsCityRPG.zip  | Unknown | -2145891094      | N/A              |                        |
-GameMode_CityRPG4.zip   | Full          |                  | N/A              |                        |
 Gamemode_MetropolisRP.zip | Unknown     |                  | N/A              |                        |
 
 # Preferences
