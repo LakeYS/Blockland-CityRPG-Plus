@@ -18,9 +18,9 @@ $CityRPGPlus::Init = 1;
 // If CityRPG is not alreay enabled, try to enable the first one we can find.
 // May execute the wrong one if there are multiple copies installed.
 if(!isObject(CityRPGData))
-  forceRequiredAddOn("Gamemode_CityRPG");
-if(!isObject(CityRPGData))
   forceRequiredAddOn("GameMode_CityRPG4");
+	if(!isObject(CityRPGData))
+	forceRequiredAddOn("Gamemode_CityRPG");
 if(!isObject(CityRPGData))
   forceRequiredAddOn("Gamemode_TysCityRPG");
 if(!isObject(CityRPGData))
