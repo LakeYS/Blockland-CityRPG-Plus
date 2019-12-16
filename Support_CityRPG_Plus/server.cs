@@ -98,7 +98,7 @@ package CityRPGPlus
 	}
 
 	// ================================== //
-	// ## Hunger Scaling  ##
+	// ## Hunger Scaling ##
 	// ================================== //
 
 	// This re-writes the hunger scaling effect as a preference.
@@ -128,6 +128,16 @@ package CityRPGPlus
 		}
 		Parent::setScale(%this, %scale);
 		CityRPGData.getData(%this.client.bl_id).valueHunger = %valueHunger; // Reset the player's hunger to its original value.
+	}
+
+	// ================================== //
+	// ## Cleanup ##
+	// ================================== //
+	function disconnect(%a)
+	{
+		$CityRPGPlus::Init = 0;
+
+		return parent::disconnect(%a);
 	}
 };
 deactivatePackage(CityRPGPlus);
