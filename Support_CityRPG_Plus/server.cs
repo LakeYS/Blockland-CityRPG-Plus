@@ -15,15 +15,24 @@ if($CityRPGPlus::Init && !$CityRPGPlus::ForceReload)
 }
 $CityRPGPlus::Init = 1;
 
+function isCityRPGLoaded()
+{
+	if(isObject(CityRPGData) || $City::Loaded)
+	{
+		return true;
+	}
+}
+
+// Hacky trick to load whichever CityRPG variant is available.
 // If CityRPG is not alreay enabled, try to enable the first one we can find.
 // May execute the wrong one if there are multiple copies installed.
-if(!isObject(CityRPGData))
+if(!isCityRPGLoaded())
   forceRequiredAddOn("GameMode_CityRPG4");
-	if(!isObject(CityRPGData))
+if(!isCityRPGLoaded())
 	forceRequiredAddOn("Gamemode_CityRPG");
-if(!isObject(CityRPGData))
+if(!isCityRPGLoaded())
   forceRequiredAddOn("Gamemode_TysCityRPG");
-if(!isObject(CityRPGData))
+if(!isCityRPGLoaded())
   forceRequiredAddOn("Gamemode_JJStormsCityRPG");
 
 // If the game-mode still doesn't exist, abort with a catch-all message.
